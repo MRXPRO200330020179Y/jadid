@@ -1,0 +1,233 @@
+/*======foto2 start======*/
+
+
+.fotomax{
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 32px;
+    &__logo{
+        @include fiximg(860px,510px,true);
+        position: relative;
+        overflow: hidden;
+    }
+    &__title__h2{
+        @include fontAll(30px,700,$fff);
+        line-height: 40px;
+        margin-top: 37px;
+        padding-bottom: 30px;
+    }
+    &__button {
+        background-color: rgba(255, 255, 255, 0.2);
+        width: 38px;
+        height: 38px;
+        border-radius: 100px;
+        font-size: 20px;
+        color: $fff;
+        text-align: center;
+        position: relative;
+        @extend%transition;
+        &:hover{
+            background-color: $coco;
+            color: black;
+        }
+        i{
+            padding-top: 2px;
+        }
+    }
+    &__top{
+        margin-top: 10px;
+    }
+}
+.mrx__pro1{
+    display: none;
+}
+.left1{
+    margin-left: -70px;
+    padding-right: 2px;
+}
+.right1{
+    margin-right: -70px;
+    padding-left: 2px;
+}
+/*======foto2 end======*/
+
+
+
+
+@media (max-width:1220px){
+    .fotomax__button__max{
+        position: absolute;
+        max-width: 100px;
+        left: 55%;
+        bottom: -10px;
+        transform: translate(-50%);
+    }
+    .fotomax__top  #container3{
+        margin-top: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .fotomax__logo {
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+
+@media (max-width:1120px){
+    .fotomax__top #container3 {
+        margin-top: 10px;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .fotomax__button__max {
+        position: absolute;
+        max-width: 100px;
+        left: 52%;
+        bottom: -10px;
+        transform: translate(-50%);
+    }
+    .mrx__pro1{
+        display: block;
+    }
+    .mrx__pro2{
+        display: none;
+    }
+}
+
+
+@media (max-width:950px){
+    .fotomax__top #container3 {
+        margin-top: 10px;
+        max-width: 700px;
+        margin: 0 auto;
+        max-height: 480px;
+        overflow: hidden;
+    }
+    .fotomax__top {
+        margin-top: 30px;
+    }
+    .fotomax {
+        position: relative;
+        margin-bottom: 90px;
+        margin-top: 30px;
+    }
+    .fotomax__logo {
+        width: auto;
+        max-width: 700px;
+        margin: 0 auto;
+        height: 480px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+
+
+@media (max-width:890px){
+    .fotomax__title__h2 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 10px;
+        margin-top: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+
+@media (max-width:820px){
+    .fotomax__top #container3 {
+        margin-top: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        max-height: 370px;
+        overflow: hidden;
+    }
+    .fotomax__button__max {
+        position: absolute;
+        max-width: 100px;
+        left: 52%;
+        bottom: -20px;
+    }
+}
+
+
+
+@media (max-width:730px){
+    .fotomax__top #container3 {
+        margin-top: 10px;
+        max-width: 100%;
+        margin: 0 auto;
+        max-height: 360px;
+        overflow: hidden;
+    }
+}
+
+
+
+@media (max-width:640px){
+
+    .fotomax__top #container3 {
+        height: 400px !important;
+    }
+}
+
+
+
+@media (max-width:530px){
+    .fotomax__top #container3 {
+        height: 260px !important;
+    }
+    .fotomax__logo {
+        width: auto;
+        max-width: 450px;
+        padding-top: 100px;
+        margin: 0 auto;
+        height: 405px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+
+@media (max-width:460px){
+    .fotomax__top #container3 {
+        height: 250px  !important;
+    }
+    .fotomax__logo {
+        width: auto;
+        max-width: 388px;
+        margin: 0 auto;
+        padding-top: 150px;
+        height: 392px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+
+@media (max-width:360px){
+    .fotomax__top #container3 {
+        height: 230px  !important;
+    }
+    .fotomax__button__max {
+        left: 50%;
+    }
+    .fotomax__logo {
+        width: auto;
+        max-width: 343px;
+        margin: 0 auto;
+        padding-top: 193px;
+        height: 392px;
+        position: relative;
+        overflow: hidden;
+    }
+    .fotomax__top {
+        margin-top: -30px;
+    }
+}

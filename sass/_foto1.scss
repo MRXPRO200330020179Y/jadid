@@ -1,0 +1,234 @@
+/*======foto1 start======*/
+
+
+
+.fotomrx{
+    position: relative;
+    margin-bottom: 80px;
+    @extend%transition;
+    &__title{
+        @include fontAll(30px,700,$fff);
+        line-height: 40px;
+        margin-top: 37px;
+        margin-bottom: 31px;
+    }
+    &__cart1{
+        width: 360px;
+        height: 332px;
+        background-color: #2b2b2b;
+    }
+    &__title__h3{
+        @include fontAll(24px,700,$coco);
+        @extend%transition;
+        line-height: 32px;
+        padding: 18px 20px 11px 30px;
+        height: 85px;
+        overflow: hidden;
+        max-width: 360px;
+    }
+    &__text__p1{
+        @include fontAll(10px,600,$fff);
+        text-transform: uppercase;
+        line-height: 12px;
+        padding-left: 30px;
+        @extend%transition;
+        padding-bottom: 30px;
+    }
+    &__logo__png{
+        @include fiximg(360px,210px,true);
+        position: relative;
+        overflow: hidden;
+        img{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 100%;
+            transition: 0.4s ease transform;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        grid-gap: 30px;
+    }
+}
+
+
+.fotomrx__cart1:hover{
+    background-color: $coco;
+}
+
+.fotomrx__cart1:hover .fotomrx__title__h3{
+    color: black;
+}
+.fotomrx__cart1:hover .fotomrx__text__p1{
+    color: black;
+}
+
+.fotomrx__cart1:hover .fotomrx__logo__png img{
+    transform: scale(1.1);
+}
+/*======foto1 end======*/
+
+
+
+@media (max-width:1300px){
+    .fotomrx__logo__png {
+        width: 320px;
+        height: 180px;
+    }
+    .fotomrx__cart1 {
+        width: 320px;
+        height: 300px;
+    }
+}
+
+@media (max-width:1180px){
+    .fotomrx__title {
+        line-height: 10px;
+        margin-top: 37px;
+        margin-bottom: 40px;
+    }
+    .fotomrx__logo__png {
+        width: 280px;
+        height: 160px;
+    }
+    .fotomrx__cart1 {
+        width: 280px;
+        height: 285px;
+    }
+}
+
+
+@media (max-width:1040px){
+    .fotomrx__cart1 {
+        width: 360px;
+        height: 325px;
+    }
+    .fotomrx__logo__png {
+        width: 360px;
+        height: 200px;
+    }
+}
+
+
+@media (max-width:890px){
+    .fotomrx__logo__png {
+        width: 320px;
+        height: 180px;
+    }
+    .fotomrx__cart1 {
+        width: 320px;
+        height: 300px;
+    }
+    .fotomrx {
+        position: relative;
+        margin-bottom: 60px;
+    }
+    .fotomrx__title {
+        line-height: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .asosy__nav__menu {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:790px){
+    .fotomrx__logo__png {
+        width: 280px;
+        height: 160px;
+    }
+    .fotomrx__cart1 {
+        width: 280px;
+        height: 285px;
+    }
+    .fotomrx__top {
+        grid-gap: 30px 15px;
+    }
+}
+
+
+@media (max-width:700px){
+    .fotomrx__logo__png {
+        width: 240px;
+        height: 140px;
+    }
+    .fotomrx__cart1 {
+        width: 240px;
+        height: 250px;
+    }
+    .fotomrx__title__h3 {
+        font-size: 22px;
+        padding: 15px 15px 11px 15px;
+    }
+    .fotomrx__text__p1 {
+        font-size: 10px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+
+@media (max-width:580px){
+    .fotomrx__logo__png {
+        width: 200px;
+        height: 110px;
+    }
+    .fotomrx__cart1 {
+        width: 200px;
+        height: 220px;
+    }
+    .fotomrx__title__h3 {
+        font-size: 20px;
+        padding: 15px 15px 11px 15px;
+    }
+    .fotomrx {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width:500px){
+    .fotomrx__logo__png {
+        width: 170px;
+        height: 100px;
+    }
+    .fotomrx__title__h3 {
+        font-size: 18px;
+        height: 75px;
+        padding: 10px 15px 10px 15px;
+    }
+    .fotomrx__cart1 {
+        width: 170px;
+        height: 200px;
+    }
+}
+
+
+@media (max-width:440px){
+    .fotomrx__logo__png {
+        width: 240px;
+        height: 140px;
+    }
+    .fotomrx__cart1 {
+        width: 240px;
+        height: 240px;
+    }
+    .fotomrx__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

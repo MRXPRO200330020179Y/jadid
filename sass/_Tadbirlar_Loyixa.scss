@@ -1,0 +1,305 @@
+/*======About the project start======*/
+
+
+.project{
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 51px;
+    &__logo{
+        @include fiximg(400px,320px,true);
+        min-width: 400px;
+    }
+    &__top{
+        display: flex;
+        grid-gap: 60px;
+        margin-bottom: 38px;
+    }
+    &__title__h2{
+        @include fontAll(30px,700,$fff);
+        line-height: 40px;
+    }
+    &__text__p1{
+        @include fontAll(16px,normal,$fff);
+        line-height: 30px;
+        padding-top: 20px;
+        max-width: 680px;
+        overflow: hidden;
+        max-height: 285px;
+    }
+    &__cart2__title__h2{
+        @include fontAll(26px,700,$fff);
+        line-height: 32px;
+    }
+    &__cart2__text__p1{
+        max-width: 1143px;
+        @include fontAll(16px,normal,$fff);
+        line-height: 30px;
+        padding-top: 21px;
+        padding-bottom: 50px;
+    }
+    &__cart__video{
+        position: relative;
+        img{
+            @include fiximg(100%,540px,true);
+            
+        }
+        span{
+            &::after{
+                content: "";
+                display: inline-block;
+                background-image: url(../foto/video__end.png);
+                width: 60px;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 50%;
+                height: 60px;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    &__cart__mrx{
+        width: 204px;
+        height: 287px;
+        background-color: $bro;
+    }
+    &__cart__logo__mrx{
+        @include fiximg(204px,200px,true);
+        position: relative;
+        overflow: hidden;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: 0.4s ease transform;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__cart__title__mrx{
+        margin: 12px 10px 0 20px;
+        @include fontAll(18px,normal,$fff);
+        line-height: 22px;
+        max-width: 165px;
+    }
+    &__cart__link__mrx{
+     @include fontAll(12px,600,$coco);
+     line-height: 15px;
+     text-transform: uppercase;
+    }
+    &__cart__link__max{
+        margin: 8px 10px 0 20px;
+        max-width: 165px;
+        overflow: hidden;
+        max-height: 40px;
+    }
+    &__cart4__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-gap: 30px;
+    }
+    &__cart4__title__h1{
+        @include fontAll(26px,700,$fff);
+        line-height: 34px;
+        padding-bottom: 33px;
+        padding-top: 44px;
+    }
+}
+
+.project__cart__mrx:hover .project__cart__logo__mrx img{
+    transform: scale(1.1);
+}
+/*======About the project   end======*/
+
+
+
+
+@media (max-width:1300px){
+    .project__cart__logo__mrx {
+        width: 100%;
+        height: 200px;
+    }
+    .project__cart__mrx {
+        width: 180px;
+        height: 287px;
+    }
+}
+
+
+@media (max-width:1100px){
+    .project__top {
+        display: flex;
+        grid-gap: 30px;
+        margin-bottom: 30px;
+    }  
+    .project {
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    .project__cart4__top {
+        grid-gap: 30px 20px;
+        flex-wrap: wrap;
+    }
+    .project__cart__video img {
+        width: 100%;
+        height: 430px;
+    }
+    .project__logo {
+        min-width: 350px;
+        height: 320px;
+    }
+}
+
+
+@media (max-width:870px){
+    .project__logo {
+        min-width: 300px;
+        height: 320px;
+    }
+    .project__text__p1 {
+        font-size: 15px;
+        color: #ffffff;
+        line-height: 28px;
+        padding-top: 0px;
+        max-width: 680px;
+        max-height: 277px;
+    }
+    .project__cart2__title__h2 {
+        line-height: 10px;
+    }
+    .project__cart2__text__p1 {
+        font-size: 15px;
+        line-height: 30px;
+        padding-top: 21px;
+        padding-bottom: 30px;
+    }
+    .project__cart__video img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .project__cart4__title__h1 {
+        font-size: 26px;
+        line-height: 34px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:700px){
+    .project__top {
+        display: flex;
+        grid-gap: 30px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .project__logo {
+        min-width: 101%;
+        height: 320px;
+    }
+    .project__cart__video img {
+        width: 100%;
+        height: 350px;
+    }
+    .project__text__p1 {
+        font-size: 15px;
+        line-height: 28px;
+        padding-top: 20px;
+        max-width: 680px;
+        max-height: 100%;
+    }
+}
+
+
+@media (max-width:550px){
+    .project__cart__video img {
+        width: 100%;
+        height: 280px;
+    }
+}
+
+
+@media (max-width:460px){
+
+    .project__cart__video img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .project__cart__logo__mrx {
+        width: 100%;
+        height: 170px;
+    }
+
+    .project__cart__mrx {
+        width: 160px;
+        height: 260px;
+    }
+    .project__cart__title__mrx {
+        margin: 12px 10px 0 20px;
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 165px;
+    }
+}
+
+
+
+@media  (max-width:420px){
+    .project__logo {
+        min-width: 101%;
+        height: 250px;
+    }
+    .project__cart__title__mrx {
+        font-size: 14px;
+        line-height: 14px;
+        margin: 12px 10px 0 10px;
+    }
+    .project__cart__link__mrx {
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 11px;
+    }
+    .project__cart__mrx {
+        width: 140px;
+        height: 225px;
+    }
+    .project__cart__video img {
+        width: 100%;
+        height: 200px;
+    }
+    .project__cart__link__max {
+        margin: 8px 10px 0 10px;
+    }
+    .project__cart__logo__mrx {
+        width: 100%;
+        height: 140px;
+    }
+}
+
+
+@media (max-width:340px){
+    .project__cart__mrx {
+        width: 120px;
+        height: 225px;
+    }
+    .project__cart__title__mrx {
+        font-size: 12px;
+        line-height: 14px;
+        margin: 12px 10px 0 10px;
+    }
+    .project__cart__video img {
+        width: 100%;
+        height: 170px;
+    }
+    .project__logo {
+        min-width: 101%;
+        height: 200px;
+    }
+}

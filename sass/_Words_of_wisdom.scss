@@ -1,0 +1,93 @@
+/*======Words of wisdom start======*/
+
+
+.wisdom{
+    position: relative;
+    &__top{
+        margin-bottom: 56px;
+    }
+    &__title{
+        @include fontAll(30px,700,$fff);
+        line-height: 40px;
+        padding-bottom: 39px;
+    }
+    &__text_p1{
+        @include fontAll(16px,normal,$fff);
+        line-height: 30px;
+        max-width: 900px;
+        padding-bottom: 16px;
+        position: relative;
+        &::after{
+            content: "";
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 35px;
+            height: 59px;
+            background-image: url(../foto/kv2.png);
+            right: 0;
+            bottom: -23px;
+            z-index: -1;
+        }
+        &::before{
+            content: "";
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 35px;
+            height: 59px;
+            background-image: url(../foto/kv1.png);
+            z-index: -1;
+            left: 0;
+            top: -14px;
+        }
+    }
+    &__link{
+        @include fontAll(14px,600,$coco);
+        text-transform: uppercase;
+        line-height: 17px; 
+    }
+    &__cart1{
+        margin-bottom: 36px;
+    }
+}
+
+.wisdom__cart1+.wisdom__cart1{
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    padding-top: 31px;
+}
+
+.wisdom__cart1:nth-child(even) {
+    direction: rtl;
+    text-align: right;
+}
+/*======Words of wisdom end======*/
+
+
+@media (max-width:600px){
+    .wisdom__text_p1 {
+        font-size: 14px;
+        line-height: 25px;
+        padding-bottom: 10px;
+    }
+    .wisdom__title {
+        font-size: 26px;
+        line-height: 25px;
+        padding-bottom: 30px;
+    }
+    .wisdom__link {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .wisdom__top {
+        margin-bottom: 30px;
+    }
+    .wisdom__text_p1::after {
+        bottom: -32px;
+    }
+    .wisdom__cart1 {
+        margin-bottom: 25px;
+    }
+}

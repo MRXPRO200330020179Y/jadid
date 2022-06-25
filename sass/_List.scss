@@ -1,0 +1,54 @@
+/*======scanner start======*/
+
+
+
+.scanner{
+    position: relative;
+    margin-bottom: 56px;
+    &__nav{
+        display: flex;
+        align-items: center;
+        grid-gap: 72px;
+        margin-top: -36px;
+    }
+    &__link{
+        @include fontAll(12px,normal,$fff);
+        text-transform: uppercase;
+        line-height: 15px;
+        padding-bottom: 27px;
+        @extend%transition;
+        &:hover{
+            color: $coco;
+            border-bottom: 4px solid $coco;
+        }
+    }
+    &__border{
+        background: #FFFFFF;
+        opacity: 0.3;
+        margin-top: 27px;
+        height: 1px;
+    }
+}
+
+
+
+/*======scanner top======*/
+
+
+@media (max-width:795px){
+    .scanner__nav {
+        margin-top: -15px;
+        grid-gap: 50px;
+    }
+}
+
+
+@media (max-width:650px){
+    .scanner {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .scanner__nav {
+        grid-gap: 40px;
+    }
+}
